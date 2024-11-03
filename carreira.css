@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: #001E36; /* Cor sólida azul escuro */
+    color: #fff; /* Cor do texto */
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0, 30, 54, 0.9); /* Um pouco mais claro para o cabeçalho */
+    border-bottom: 5px solid #fff; /* Borda branca */
+}
+
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.job-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(43, 21, 21, 0.3);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+
+.job-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.job-card i {
+    font-size: 60px;
+    margin-bottom: 15px;
+    color: rgb(0, 150, 255);
+    transition: color 0.3s;
+}
+
+.job-card:hover i {
+    color: #fff; 
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1em;
+    margin: 10px 0 20px;
+}
+
+button {
+    background-color: rgb(55, 11, 156);
+    color: white;
+    border: none; /* Remove bordas */
+    padding: 12px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave */
+}
+
+button:hover {
+    background-color: rgb(0, 120, 220); /* Azul mais escuro ao passar o mouse */
+    transform: scale(1.05); /* Aumenta levemente o botão */
+}
+
+button:active {
+    transform: scale(0.95); /* Levemente menor ao clicar */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 30, 54, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #fff; /* Borda branca */
+}
